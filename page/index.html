@@ -1,114 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, Marilyn</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #fff;
-        }
-
-        header {
-            background-color: #681db9;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .playlist {
-            list-style: none;
-            padding: 0;
-        }
-
-        .playlist-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            padding: 10px;
-            background-color: #282828;
-            border-radius: 5px;
-        }
-
-        .playlist-item img {
-            width: 50px;
-            height: 50px;
-            border-radius: 5px;
-            margin-right: 20px;
-        }
-
-        .playlist-item div {
-            flex: 1;
-        }
-
-        .playlist-item h3 {
-            margin: 0;
-            font-size: 18px;
-        }
-
-        .playlist-item p {
-            margin: 5px 0 0;
-            color: #b3b3b3;
-        }
-
-        footer {
-            background-color: #282828;
-            padding: 10px;
-            text-align: center;
-            color: #b3b3b3;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>LaptopWorld</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Hello World, this is my playlist</h1>
-</header>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">LaptopWorld</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">LaptopWorld</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
 
-<div class="container">
-    <ul class="playlist">
-        <li class="playlist-item">
-            <img src="https://via.placeholder.com/50" alt="Album Cover">
-            <div>
-                <h3>Canción 1</h3>
-                <p>Artista 1</p>
-            </div>
-        </li>
-        <li class="playlist-item">
-            <img src="https://via.placeholder.com/50" alt="Album Cover">
-            <div>
-                <h3>Canción 2</h3>
-                <p>Artista 2</p>
-            </div>
-        </li>
-        <li class="playlist-item">
-            <img src="https://via.placeholder.com/50" alt="Album Cover">
-            <div>
-                <h3>Canción 3</h3>
-                <p>Artista 3</p>
-            </div>
-        </li>
-        <!-- Añadir más canciones según sea necesario -->
-    </ul>
-</div>
+                    <li>
+                        <button id="laptop" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Laptops</button>
+                    </li>
 
-<footer>
-    <p>SpotYourMusic © 2024</p>
-</footer>
-
+                    <li>
+                        <button id="accesorios" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Accesorios</button>
+                    </li>
+    
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2024 LaptopWorld</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/menu.js"></script>
 </body>
 </html>
