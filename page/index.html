@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, Marilyn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #681db9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .playlist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .playlist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #282828;
+            border-radius: 5px;
+        }
+
+        .playlist-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .playlist-item div {
+            flex: 1;
+        }
+
+        .playlist-item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .playlist-item p {
+            margin: 5px 0 0;
+            color: #b3b3b3;
+        }
+
+        footer {
+            background-color: #282828;
+            padding: 10px;
+            text-align: center;
+            color: #b3b3b3;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hello World, this is my playlist</h1>
+</header>
+
+<div class="container">
+    <ul class="playlist">
+        <li class="playlist-item">
+            <img src="https://via.placeholder.com/50" alt="Album Cover">
+            <div>
+                <h3>Canción 1</h3>
+                <p>Artista 1</p>
+            </div>
+        </li>
+        <li class="playlist-item">
+            <img src="https://via.placeholder.com/50" alt="Album Cover">
+            <div>
+                <h3>Canción 2</h3>
+                <p>Artista 2</p>
+            </div>
+        </li>
+        <li class="playlist-item">
+            <img src="https://via.placeholder.com/50" alt="Album Cover">
+            <div>
+                <h3>Canción 3</h3>
+                <p>Artista 3</p>
+            </div>
+        </li>
+        <!-- Añadir más canciones según sea necesario -->
+    </ul>
+</div>
+
+<footer>
+    <p>SpotYourMusic © 2024</p>
+</footer>
+
+</body>
+</html>
